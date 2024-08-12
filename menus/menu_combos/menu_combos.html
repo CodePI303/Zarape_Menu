@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Administrar Combos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../css/style.css">
+            
+        <style type="text/css" media="screen">
+            :root {
+                --color-green: #00a878;
+                --color-red: #fe5e41;
+                --color-button: #fdffff;
+                --color-black: #000;
+            }
+            .switch-button {
+                display: inline-block;
+            }
+            .switch-button .switch-button__checkbox {
+                display: none;
+            }
+            .switch-button .switch-button__label {
+                background-color: var(--color-green);
+                width: 2rem;
+                height: 1rem;
+                border-radius: 3rem;
+                display: inline-block;
+                position: relative;
+            }
+            .switch-button .switch-button__label:before {
+                transition: .2s;
+                display: block;
+                position: absolute;
+                width: 1rem;
+                height: 1rem;
+                background-color: var(--color-button);
+                content: '';
+                border-radius: 50%;
+                box-shadow: inset 0px 0px 0px 1px var(--color-black);
+            }
+            .switch-button .switch-button__checkbox:checked + .switch-button__label {
+                background-color: var(--color-red);
+            }
+            .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+                transform: translateX(1rem);
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="wrapper d-flex align-items-stretch">
+            <nav id="sidebar" style="background-color: #FA812F;">
+                <div class="custom-menu">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary" >
+                        <i class="fa fa-bars" style="background-color: #FEF3E2; color: #FA4032"></i>
+                        <span class="sr-only"></span>
+                    </button>
+                </div>
+                <div class="p-4">
+                    <h1><a href="index.html" class="logo"><img src="../../images/logo2.png" alt="" style="width: 80px;height: 90px"/>El zarape <span style="color: white">Administrador</span></a></h1>
+                    <ul class="list-unstyled components mb-5">
+                        <li>
+                            <a href="../menu_platillos/menu_platillos.html"><span class="fa fa-user mr-3"></span>Platillos</a>
+                        </li>
+                        <li>
+                            <a href="../menu_bebida/menu_bebidas.html"><span class="fa fa-briefcase mr-3"></span>Bebidas</a>
+                        </li>
+                        <li>
+                            <a href="menu_combos.html"><span class="fa fa-sticky-note mr-3"></span> Combos</a>
+                        </li>
+                    </ul>
+            </nav>
+            
+            <div id="content" style="background-color: #FEF3E2;" class="row">
+                <!-- <div id="content" style="background-color: #FEF3E2" class="p-4 p-md-5 pt-5">comment -->
+
+                <div class="container-fluid" style="background-color: #FA4032; height: 40px; text-align: center">
+                    <h3 style="color: white;">Menú Combos</h3>
+                </div>
+                
+                <div class="container-fluid" style="background-color: ">
+                
+                <div class="row">
+                <div class="col-md-1" style="content: center;"><br>
+                </div>
+                <div class="col-md-3" style="content: center;"><br>
+                <br><br>
+                <img src="../../images/imagenes_combos/combo2.jpg" alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Sabor veracruzano con Toque Refrescante</p>
+                <p style=" font-family: cursive;color:black;">Costo: $275</p>
+                <p style=" font-family: arial;color:black">Filete de pescado en salsa de jitomate con aceitunas, alcaparras y chiles acompañado de agua con sabor a horchata tradicional.</p>
+                <div></div><br>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check">
+                <label for="producto-check">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad1" min="0" value="0" max="100" step="1">
+                </div>
+               
+                <br>
+                <br>
+                <br>
+               <img src="../../images/imagenes_combos/combo3.jpg" alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Combo picante</p>
+                <p style=" font-family: cursive;color:black;">Costo: $170</p>
+                <p style=" font-family: arial;color:black">Tortillas de maíz con carne de cerdo, piña asada, cebolla y cilantro acompañadas de Cerveza con jugo de limón, salsa inglesa, salsa picante y sal en el borde del vaso.</p>
+                <div></div><br>
+               <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check2">
+                <label for="producto-check2">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad2" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+                <img src="../../images/imagenes_combos/combo4.jpg" alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Fiesta mexicana</p>
+                <p style=" font-family: cursive;color:black;">Costo: $200</p>
+                <p style=" font-family: arial;color:black">Caldo de maíz hominy con carne de cerdo, servido con rábanos, lechuga, cebolla y limones acompañado de bebida caliente a base de masa de maíz y chocolate.</p>
+                <div></div><br>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check3">
+                <label for="producto-check3">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad3" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+                <img src="../../images/imagenes_combos/combo10.jpg" alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Saborcito mexicano</p>
+                <p style=" font-family: cursive;color:black;">Costo: $115</p>
+                <p style=" font-family: arial;color:black">Frijoles negros o pintos refritos con manteca de cerdo acompañados de Bebida alcohólica tradicional mexicana hecha de la fermentación del aguamiel del maguey.</p>
+                <div></div><br>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check10">
+                <label for="producto-check10">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad10" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+                <div class="col-md-1" style="content: center;"><br>
+                </div>
+            <div class="col-md-3">
+                <br>
+                <br>
+                <br>
+                <img src="../../images/imagenes_combos/combo5.jpg"  alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Delicias mexicanas</p>
+                <p style=" font-family: cursive;color:black;">Costo: $165</p>
+                <p style=" font-family: arial;color:black">Tortillas de maíz con cerdo desmenuzado, cebolla y cilantro acompañados de Refresco de cola.</p>
+                <div></div>
+                <br>
+                <br>
+                <br>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check4">
+                <label for="producto-check4">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad4" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+                <img src="../../images/imagenes_combos/combo6.jpg" alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Festí mexicano</p>
+                <p style=" font-family: cursive;color:black;">Costo: $175</p>
+                <p style=" font-family: arial;color:black">Sopa de caldo de pollo con tiras de tortilla frita, chile pasilla, crema, queso fresco y aguacate acompañada de Bebida refrescante hecha con pulpa de tamarindo, agua y azúcar.</p>
+                <div></div><br>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check5">
+                <label for="producto-check5">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad5" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+                <img src="../../images/imagenes_combos/combo7.jpg" alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Fiestas tradicionales</p>
+                <p style=" font-family: cursive;color:black;">Costo: $200</p>
+                <p style=" font-family: arial;color:black">Camarones marinados en jugo de limón con jitomate, cebolla, cilantro y aguacate acompañados de Bebida natural de agua con sabor a piña.</p>
+                <div></div><br>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check6">
+                <label for="producto-check6">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad6" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+                    <div class="col-md-1" style="content: center;"><br>
+                </div>
+            <div class="col-md-3">
+                                <br>
+                <br>
+                <br>
+                <img src="../../images/imagenes_combos/combo8.jpg"  alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Mexicano tradicional</p>
+                <p style=" font-family: cursive;color:black;">Costo: $190</p>
+                <p style=" font-family: arial;color:black">Tortillas gruesas de maíz con frijoles, carne desmenuzada, lechuga, crema, queso fresco y salsa acompañadas de Bebida caliente a base de masa de maíz y chocolate.</p>
+                <div></div><br>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check7">
+                <label for="producto-check7">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad7" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+                <img src="../../images/imagenes_combos/combo9.jpg" alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Mexico en un plato</p>
+                <p style=" font-family: cursive;color:black;">Costo: $215</p>
+                <p style=" font-family: arial;color:black">Caldo caliente con carne de res, papas, zanahorias y maíz acompañado de Bebida fermentada hecha con cáscara de piña, piloncillo (panela) y especias como clavo y canela.</p>
+                <div></div><br>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check8">
+                <label for="producto-check8">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad8" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+                <img src="../../images/imagenes_combos/combo1.jpg" alt="" style="width: 200px; height: 100px;"/>
+                <p style=" font-family: arial black;color: black;font-size: 16px;">Tierra azteca</p>
+                <p style=" font-family: cursive;color:black;">Costo: $150</p>
+                <p style=" font-family: arial;color:black">Aguacate fresco molido con cebolla, cilantro, limón y totopos de maíz acompañado de Bebida fermentada hecha con cáscara de piña, piloncillo (panela) y especias como clavo y canela.</p>
+                <div></div>
+                <div class="checkbox-container">
+                <input type="checkbox" class="producto-check" name="producto-check9">
+                <label for="producto-check9">Seleccionar</label>
+                <input type="number" class="cantidad" name="cantidad9" min="0" value="0" max="100" step="1">
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+                    <div class="row justify-content-end">
+                    <div class="col-md-8">
+                    </div>
+                        <div class="col-md-2" >
+                    
+                    <button type="button" class="btn" style="background-color: #FAAF08" onclick="guardarProductos()">Guardar Productos</button>
+                    </div>
+                    </div> 
+                <script src="../../js/jquery.min.js"></script>
+                <script src="../../js/popper.js"></script>
+                <script src="../../js/bootstrap.min.js"></script>
+                <script src="../../js/main.js"></script>
+                <script src="menu.js" type="text/javascript"></script>
+                </body>
+                </html>
